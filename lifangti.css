@@ -46,25 +46,25 @@ main>div {
   text-align: center;
   line-height: 300px;
   font-size: 80px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .front {
-  background: url("../image/01.jpg") no-repeat;
+  background: url("./images/01.jpg") no-repeat;
   background-size: cover;
   /* background: rgba(255,21,30,.3); */
   transform: translateZ(150px);
 }
 
 .back {
-  background: url("../image/02.jpg") no-repeat;
+  background: url("./images/02.jpg") no-repeat;
   background-size: cover;
   /* background: rgba(205,201,300,.3); */
   transform: translateZ(-150px);
 }
 
 .left {
-  background: url("../image/03.jpg") no-repeat;
+  background: url("./images/03.jpg") no-repeat;
   background-size: cover;
   /* background: rgba(255,21,300,.3); */
 
@@ -72,7 +72,7 @@ main>div {
 }
 
 .right {
-  background: url("../image/04.jpg") no-repeat;
+  background: url("./images/05.jpg") no-repeat;
   background-size: cover;
   /* background: rgba(255,201,30,.3); */
 
@@ -80,7 +80,7 @@ main>div {
 }
 
 .top {
-  background: url("../image/06.jpg") no-repeat;
+  background: url("./images/06.jpg") no-repeat;
   background-size: cover;
   /* background: rgba(25,21,300,.3); */
 
@@ -88,7 +88,7 @@ main>div {
 }
 
 .bottom {
-  background: url("../image/07.jpg") no-repeat;
+  background: url("./images/07.jpg") no-repeat;
   background-size: cover;
   /* background: rgba(25,210,30,.3); */
 
