@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: radial-gradient(ellipse,#ebebeb, #000000);
+  display: flex;
+  /* 水平居中*/
+  justify-content: center;
+  /* 垂直居中*/
+  align-items: center;
+}
+
+div {
+  width: 300px;
+  height: 300px;
+  perspective: 900px;
+  /*视角查看的基本位置,默认值50%,50%/*/
+  perspective-origin: 50% 50%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  /* 保留3D元素的转换效果*/
+  transform-style:preserve-3d;
+  animation: rotate 100s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  to {
+    transform: rotateX(3600deg) rotateY(3600deg) rotateZ(3600deg);
+  }
+}
+
+main>div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+  font-size: 80px;
+  opacity: 0.8;
+}
+
+.front {
+  background: url("../image/01.jpg") no-repeat;
+  background-size: cover;
+  /* background: rgba(255,21,30,.3); */
+  transform: translateZ(150px);
+}
+
+.back {
+  background: url("../image/02.jpg") no-repeat;
+  background-size: cover;
+  /* background: rgba(205,201,300,.3); */
+  transform: translateZ(-150px);
+}
+
+.left {
+  background: url("../image/03.jpg") no-repeat;
+  background-size: cover;
+  /* background: rgba(255,21,300,.3); */
+
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+.right {
+  background: url("../image/04.jpg") no-repeat;
+  background-size: cover;
+  /* background: rgba(255,201,30,.3); */
+
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.top {
+  background: url("../image/06.jpg") no-repeat;
+  background-size: cover;
+  /* background: rgba(25,21,300,.3); */
+
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.bottom {
+  background: url("../image/07.jpg") no-repeat;
+  background-size: cover;
+  /* background: rgba(25,210,30,.3); */
+
+  transform: rotateX(-90deg) translateZ(150px);
+}
